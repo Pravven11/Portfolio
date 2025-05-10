@@ -1,3 +1,5 @@
+import { Background } from "../components/Background";
+import { Navbar } from "../components/Navbar";
 import { ThemeToggle } from "../components/ThemeToggle";
 
 
@@ -7,9 +9,9 @@ export const Home = () =>{
         {/* Theme Toggle */}
         <ThemeToggle />
         {/* Background effects */}
-
+        <Background />
         {/* Navbar */}
-
+        <Navbar />
         {/* Mian content */}
 
         {/* Footer */}
