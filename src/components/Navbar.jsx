@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 const navItems = [
@@ -36,7 +36,7 @@ export const Navbar = () => {
         >
           <span className="relative z-10">
             Praveen Tiwari
-            <span className="text-glow text-foreground"> Portfolio </span>{" "}
+            {/* <span className="text-glow text-foreground"> Portfolio </span>{" "} */}
           </span>
         </a>
 
@@ -60,7 +60,7 @@ export const Navbar = () => {
           className="md:hidden p-2 text-foreground z-50"
           aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
+          {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}{" "}
         </button>
 
         <div
