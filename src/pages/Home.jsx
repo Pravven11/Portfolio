@@ -6,13 +6,15 @@ import { ThemeToggle } from "../components/ThemeToggle";
 import { Loader } from "../components/Loader";
 import SocialLinks from "../components/SocialLinks";
 import EmailLink from "../components/EmailLink";
+import { About } from "../components/About";
+import { Contact } from "../components/Contact";
 
 export const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     // Show loader for exactly 3 seconds
-    const timer = setTimeout(() => setIsLoading(false), 2000);
+    const timer = setTimeout(() => setIsLoading(false), 1800);
     return () => clearTimeout(timer);
   }, []);
 
@@ -42,6 +44,8 @@ export const Home = () => {
       {/* Main content */}
       <main>
         <HeroSection />
+        <About />
+        <Contact />
       </main>
 
       {/* Footer (add here when you have one) */}

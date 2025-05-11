@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
+
 const navItems = [
   { name: "Home", href: "#hero" },
   { name: "About", href: "#about" },
@@ -29,13 +30,13 @@ export const Navbar = () => {
         isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
       )}
     >
-      <div className="container flex items-center justify-between">
+      <div className="container flex items-center justify-between flex-row-reverse md:flex-row">
         <a
           className="text-xl font-bold text-primary flex items-center"
           href="#hero"
         >
           <span className="relative z-10">
-            Praveen Tiwari
+            PT
             {/* <span className="text-glow text-foreground"> Portfolio </span>{" "} */}
           </span>
         </a>
