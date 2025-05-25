@@ -182,3 +182,23 @@
 .animate-ping-slow {
   animation: ping-slow 2.5s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
+
+/* Ensure smooth transitions for mobile menu */
+.nav-transition {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Better spacing for mobile */
+@media (max-width: 767px) {
+  section {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+  
+  #hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

@@ -8,6 +8,9 @@ import SocialLinks from "../components/SocialLinks";
 import EmailLink from "../components/EmailLink";
 import { About } from "../components/About";
 import { Contact } from "../components/Contact";
+import Experience from "../components/Experience";
+import Project from "../components/Project";
+// import { GeminiChatBot } from "../components/GeminiChatBot";
 
 export const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,8 +34,7 @@ export const Home = () => {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Theme Toggle */}
-      <ThemeToggle />
-
+      {/* <ThemeToggle /> */}
       {/* Background effects */}
       <Background />
 
@@ -45,10 +47,13 @@ export const Home = () => {
       <main>
         <HeroSection />
         <About />
+        <Experience />
+        <Project />
         <Contact />
       </main>
 
       {/* Footer (add here when you have one) */}
+      {/* <GeminiChatBot /> */}
     </div>
   );
 };
